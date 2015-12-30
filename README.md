@@ -18,13 +18,11 @@ $(selector).lunbo(yourConfig);
 **注意：**
 selector应该是个容器，下面的html结构应该是ul li img的形式：
 
-```
->
-&lt;div class='container'&gt;
-	&lt;ul&gt;
-		&lt;li&gt; &lt;img src=''&gt; &lt;/li&gt;
-		&lt;li&gt; &lt;img src=''&gt; &lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-
+```html
+<div class='container'>
+	<ul>
+		<li> <img src=''></li>
+		<li> <img src=''></li>
+	</ul>
+</div>
 ```
