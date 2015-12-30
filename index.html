@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <style>
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden
+    }
+
+    .clearfix {
+        *+height: 1%;
+    }
+
+    .container {
+        border: 1px solid green;
+        height: 300px;
+    }
+
+    .container ul {}
+
+    .container ul li {
+        /* transition: width .5s, height .5s, top .5s, left .5s;
+            -webkit-transition: width .5s, height .5s, top .5s, left .5s;
+            */
+            border:1px solid red;
+    }
+
+    .container ul li img {}
+
+    .left,
+    .right {
+        cursor: pointer;
+    }
+    </style>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.container').lunbo({
+            num: 5,
+            maxWidth: 500,
+            maxHeight: 300,
+            distance: 50,
+            scale: 0.6,
+            animationTime: 1000,
+            showTime: 4000
+        });
+        $('#container2').lunbo({
+            num: 5,
+            maxWidth: 200,
+            maxHeight: 100,
+            showTime: 5000
+        });
+
+        $('#container3').lunbo({
+            num: 5,
+            maxWidth: 300,
+            maxHeight: 250,
+            distance: 30,
+            autoPlay: false
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <ul>
+            <li>
+                <img src="img/one/01.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/02.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/03.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/04.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/05.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/06.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/one/07.jpg" alt="" />
+            </li>
+            <img src="img/left.png" class="left">
+            <img src="img/right.png" class="right">
+        </ul>
+    </div>
+    <div class="container" id="container2">
+        <ul>
+            <li>
+                <img src="img/two/1.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/2.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/3.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/4.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/5.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/6.jpg" alt="" />
+            </li>
+            <li>
+                <img src="img/two/7.jpg" alt="" />
+            </li>
+            <img src="img/left.png" class="left">
+            <img src="img/right.png" class="right">
+        </ul>
+    </div>
+    <div class="container" id="container3">
+        <ul>
+            <li>
+                <img src="img/three/1.png" alt="" />
+            </li>
+            <li>
+                <img src="img/three/2.png" alt="" />
+            </li>
+            <li>
+                <img src="img/three/3.png" alt="" />
+            </li>
+            <li>
+                <img src="img/three/4.png" alt="" />
+            </li>
+            <li>
+                <img src="img/three/5.png" alt="" />
+            </li>
+            <img src="img/left.png" class="left">
+            <img src="img/right.png" class="right">
+        </ul>
+    </div>
+</body>
+
+</html>
