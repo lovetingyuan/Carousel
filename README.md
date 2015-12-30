@@ -2,7 +2,7 @@
 
 **用法：**
 
-```
+```javascript
 var yourConfig = {
     num: 3, //要显示的数量，应该是个奇数
     maxWidth: 250, //代表中央图片的宽度
